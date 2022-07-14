@@ -12,7 +12,9 @@ include "koneksi.php";
 
 <body>
   <!-- Sidenav -->
-  <?php include("../includes/navbar.php") ?>
+  <?php
+  $myvar_not_replicated = basename(__FILE__);;
+  include("../includes/navbar.php") ?>
 
   <!-- Main content -->
   <div class="main-content" id="panel">
@@ -41,7 +43,7 @@ include "koneksi.php";
               <div class="row align-items-center">
                 <br>
                 <h2> <b> Create a topic <b></h2>
-                <hr width="970px">
+                <hr width="870px">
                 <?php
                 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
                   //the form hasn't been posted yet, display it

@@ -12,7 +12,9 @@ include "koneksi.php";
 
 <body>
   <!-- Sidenav -->
-  <?php include("../includes/navbar.php") ?>
+  <?php
+  $myvar_not_replicated = basename(__FILE__);;
+  include("../includes/navbar.php") ?>
 
   <!-- Main content -->
   <div class="main-content" id="panel">
