@@ -6,6 +6,7 @@ if (empty($_SESSION['name'])) {
   header("location:login.php?pesan=belum_login");
 }
 
+$myvar_not_replicated = basename(__FILE__);
 if ($_SESSION['user_level'] == 1) {
   header("location:profileAdmin.php");
 }
@@ -16,7 +17,6 @@ if ($_SESSION['user_level'] == 1) {
 <body>
   <!-- Sidenav -->
   <?php
-  $myvar_not_replicated = basename(__FILE__);;
   include("../includes/navbar.php") ?>
 
   <!-- Main content -->

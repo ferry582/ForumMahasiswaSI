@@ -6,13 +6,13 @@ if (empty($_SESSION['name'])) {
   header("location:login.php?pesan=belum_login");
 }
 include "koneksi.php";
+$myvar_not_replicated = basename(__FILE__);
 include("../includes/header.php");
 ?>
 
 <body>
   <!-- Sidenav -->
   <?php
-  $myvar_not_replicated = basename(__FILE__);;
   include("../includes/navbar.php") ?>
 
   <!-- Main content -->

@@ -13,12 +13,13 @@ if ($name != "ferry") {
 }
 ?>
 
-<?php include("../includes/header.php") ?>
+<?php 
+$myvar_not_replicated = basename(__FILE__);
+include("../includes/header.php") ?>
 
 <body>
   <!-- Sidenav -->
   <?php
-  $myvar_not_replicated = basename(__FILE__);;
   include("../includes/navbar.php") ?>
 
   <!-- Main content -->
